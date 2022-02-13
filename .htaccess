@@ -1,0 +1,34 @@
+# This configuration file should be uploaded to the server as "<Application Folder>/Build/.htaccess"
+# This configuration has been tested with Unity 2020.1 builds, hosted on Apache/2.4
+# NOTE: "mod_mime" Apache module must be enabled for this configuration to work.
+
+# The following lines are required for builds without decompression fallback, compressed with gzip
+
+
+<IfModule mod_mime.c>
+
+<FilesMatch "[^.]+\.data.gz$">
+  Header set Content-Type "application/octet-stream"
+  Header set Content-Encoding "gzip"
+</FilesMatch>
+
+<FilesMatch "[^.]+\.js.gz$">
+  Header set Content-Type "application/javascript"
+  Header set Content-Encoding "gzip"
+</FilesMatch>
+
+<FilesMatch "[^.]+\.wasm.gz$">
+  Header set Content-Type "application/wasm"
+  Header set Content-Encoding "gzip"
+</FilesMatch>
+
+<FilesMatch "[^.]+\.gz$">
+  Header set Content-Encoding "gzip"
+</FilesMatch>
+
+<FilesMatch "[^.]+\.wasm$">
+  # Header set Content-Encoding "gzip"
+  Header set Content-Type "application/wasm"
+</FilesMatch>
+
+</IfModule>
