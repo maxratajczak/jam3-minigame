@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Build 20.loader.js";
+      var loaderUrl = buildUrl + "/Build 21.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Build 20.data.unityweb",
-        frameworkUrl: buildUrl + "/Build 20.framework.js.unityweb",
-        codeUrl: buildUrl + "/Build 20.wasm.unityweb",
+        dataUrl: buildUrl + "/Build 21.data.unityweb",
+        frameworkUrl: buildUrl + "/Build 21.framework.js.unityweb",
+        codeUrl: buildUrl + "/Build 21.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "CatchTheCandidate",
