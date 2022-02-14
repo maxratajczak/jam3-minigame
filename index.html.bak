@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Fullscreen</div>
+        <div id="unity-build-title">CatchTheCandidate</div>
       </div>
     </div>
     <script>
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Build 22.loader.js";
+      var loaderUrl = buildUrl + "/Build 23.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Build 22.data.unityweb",
-        frameworkUrl: buildUrl + "/Build 22.framework.js.unityweb",
-        codeUrl: buildUrl + "/Build 22.wasm.unityweb",
+        dataUrl: buildUrl + "/Build 23.data.unityweb",
+        frameworkUrl: buildUrl + "/Build 23.framework.js.unityweb",
+        codeUrl: buildUrl + "/Build 23.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "CatchTheCandidate",
